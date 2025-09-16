@@ -28,7 +28,7 @@
   <meta name="twitter:site" content="@WarmingMatHub" />
   <meta name="twitter:creator" content="@WarmingMatHub" />
 
-  <link rel="icon" href="https://via.placeholder.com/32x32.png?text=WM" type="image/png" />
+  <link rel="icon" href="./assets/icon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -45,6 +45,26 @@
     }
     .shadow-soft {
       box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @keyframes floaty {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+    .cta-floating {
+      animation: floaty 4s ease-in-out infinite;
     }
   </style>
 
@@ -175,42 +195,42 @@
           <p class="text-lg md:text-xl text-slate-100">Master dinner parties, potlucks, and everyday meals with a warming mat for food that delivers even heat, smart safety, and stress-free hosting. Dive into our warming mat guide to compare models, learn pro tips, and shop confidently.</p>
         </div>
         <div class="flex flex-col sm:flex-row sm:items-center gap-4">
-          <a href="https://www.amazon.com/dp/example" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-amber-400 text-slate-900 rounded-full shadow-soft hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300">Shop the Food Warming Mat on Amazon <span class="ml-2 text-sm tracking-wide uppercase text-slate-800">(Coming Soon)</span></a>
-          <a href="#guide" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold border border-white/70 text-white rounded-full hover:bg-white/10 focus:outline-none focus:ring-4 focus:ring-white/30">Read the Buying Guide</a>
+          <a href="https://www.amazon.com/dp/example" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-amber-400 text-slate-900 rounded-full shadow-soft hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300 transition-transform duration-300 hover:-translate-y-1 cta-floating reveal" data-reveal-immediate="true">Shop the Food Warming Mat on Amazon <span class="ml-2 text-sm tracking-wide uppercase text-slate-800">(Coming Soon)</span></a>
+          <a href="#guide" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold border border-white/70 text-white rounded-full hover:bg-white/10 focus:outline-none focus:ring-4 focus:ring-white/30 transition-transform duration-300 hover:-translate-y-1 reveal" data-reveal-immediate="true">Read the Buying Guide</a>
         </div>
         <div class="grid gap-6 md:grid-cols-3">
-          <img src="https://via.placeholder.com/400x250.png?text=Food+Warming+Mat" alt="Food warming mat keeping dishes hot" class="w-full rounded-lg shadow-lg" loading="lazy" />
-          <img src="https://via.placeholder.com/400x250.png?text=Warming+Mat+for+Food" alt="Elegant warming mat for food on kitchen counter" class="w-full rounded-lg shadow-lg hidden md:block" loading="lazy" />
-          <img src="https://via.placeholder.com/400x250.png?text=Warming+Mat" alt="Compact warming mat for everyday meals" class="w-full rounded-lg shadow-lg hidden lg:block" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?auto=format&fit=crop&w=600&q=80" alt="Food warming mat keeping dishes hot" class="w-full rounded-xl shadow-lg reveal" loading="lazy" data-reveal-immediate="true" />
+          <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=80" alt="Elegant warming mat for food on kitchen counter" class="w-full rounded-xl shadow-lg hidden md:block reveal" loading="lazy" data-reveal-immediate="true" />
+          <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=600&q=80" alt="Compact warming mat for everyday meals" class="w-full rounded-xl shadow-lg hidden lg:block reveal" loading="lazy" data-reveal-immediate="true" />
         </div>
       </div>
     </section>
 
     <section id="features" class="bg-white">
       <div class="max-w-5xl mx-auto px-6 py-16">
-        <header class="mb-6">
+        <header class="mb-6 space-y-3 reveal">
           <h2 class="text-3xl font-bold text-slate-900">Top Food Warming Mat Features You Will Love</h2>
-          <p class="text-slate-600 mt-3">A reliable warming mat for food ensures every recipe stays delicious. Explore these high-impact features before you order&nbsp;your next warming mat.</p>
+          <p class="text-slate-600">A reliable warming mat for food ensures every recipe stays delicious. Explore these high-impact features before you order&nbsp;your next warming mat.</p>
         </header>
         <ul class="grid gap-6 md:grid-cols-2 list-disc list-inside text-slate-700">
-          <li><strong>Even heat distribution:</strong> Advanced warming mat technology delivers consistent warmth from edge to edge so appetizers and entrées stay at peak serving temperature.</li>
-          <li><strong>Adjustable temperature control:</strong> Customize how warm you keep soups, casseroles, or desserts with a precise food warming mat that adapts to every dish.</li>
-          <li><strong>Slim, portable design:</strong> Lightweight construction slides easily onto buffet tables or countertops, making the warming mat ideal for parties and daily dining.</li>
-          <li><strong>Safety-first materials:</strong> Heat-resistant surfaces, auto shut-off, and cool-touch edges give you peace of mind while using your warming mat for food at home.</li>
-          <li><strong>Effortless cleanup:</strong> Smooth, wipeable surfaces and removable covers keep the warming mat looking pristine after every celebration.</li>
+          <li class="reveal"><strong>Even heat distribution:</strong> Advanced warming mat technology delivers consistent warmth from edge to edge so appetizers and entrées stay at peak serving temperature.</li>
+          <li class="reveal"><strong>Adjustable temperature control:</strong> Customize how warm you keep soups, casseroles, or desserts with a precise food warming mat that adapts to every dish.</li>
+          <li class="reveal"><strong>Slim, portable design:</strong> Lightweight construction slides easily onto buffet tables or countertops, making the warming mat ideal for parties and daily dining.</li>
+          <li class="reveal"><strong>Safety-first materials:</strong> Heat-resistant surfaces, auto shut-off, and cool-touch edges give you peace of mind while using your warming mat for food at home.</li>
+          <li class="reveal"><strong>Effortless cleanup:</strong> Smooth, wipeable surfaces and removable covers keep the warming mat looking pristine after every celebration.</li>
         </ul>
-        <p class="mt-8 text-slate-600">Want more? Jump down to our <a href="#guide" class="text-amber-600 font-semibold hover:text-amber-500">warming mat buying guide</a> for insider tips and comparison ideas.</p>
+        <p class="mt-8 text-slate-600 reveal">Want more? Jump down to our <a href="#guide" class="text-amber-600 font-semibold hover:text-amber-500">warming mat buying guide</a> for insider tips and comparison ideas.</p>
       </div>
     </section>
 
     <section id="why" class="bg-slate-50">
       <div class="max-w-4xl mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-slate-900 mb-6">Why Every Kitchen Needs a Reliable Food Warming Mat</h2>
+        <h2 class="text-3xl font-bold text-slate-900 mb-6 reveal">Why Every Kitchen Needs a Reliable Food Warming Mat</h2>
         <article class="space-y-6 text-slate-700 leading-relaxed">
-          <p>If you love entertaining or simply want to keep weeknight dinners relaxed, a food warming mat is one of the smartest additions you can make to your kitchen. Imagine setting out freshly prepared dishes and trusting that each bite will stay cozy and delicious for every guest. A warming mat for food eliminates frantic reheating runs to the microwave and keeps your carefully crafted meals at the perfect temperature.</p>
-          <p>Weekend brunch spreads, holiday potlucks, and busy family dinners all benefit from the reliable warmth a dedicated warming mat provides. Instead of juggling hot pans and timers, you can focus on enjoying the conversation. The best food warming mat offers even heating, so every serving stays mouthwateringly warm without overcooking. Whether you are keeping pancakes fluffy or sauces silky, the right warming mat makes dining feel effortless and special.</p>
-          <p>Beyond entertaining, a compact warming mat can transform everyday routines. Place one on your countertop to keep coffee or tea at the ideal sipping temperature, or use a warming mat for food prep to keep sauces smooth while you finish other tasks. Parents appreciate how a warming mat keeps meals ready for different schedules, making family dinners a breeze. With thoughtful safety features and sleek designs, a modern food warming mat blends seamlessly into any kitchen aesthetic.</p>
-          <p>Choosing a warming mat also supports mindful cooking. Instead of reheating leftovers over and over, you maintain food quality and reduce waste. Guests arriving late still enjoy meals that taste freshly prepared, and you gain confidence hosting any occasion. When you invest in a versatile warming mat, you invest in delicious moments shared at the table, warm conversations, and kitchen calm.</p>
+          <p class="reveal">If you love entertaining or simply want to keep weeknight dinners relaxed, a food warming mat is one of the smartest additions you can make to your kitchen. Imagine setting out freshly prepared dishes and trusting that each bite will stay cozy and delicious for every guest. A warming mat for food eliminates frantic reheating runs to the microwave and keeps your carefully crafted meals at the perfect temperature.</p>
+          <p class="reveal">Weekend brunch spreads, holiday potlucks, and busy family dinners all benefit from the reliable warmth a dedicated warming mat provides. Instead of juggling hot pans and timers, you can focus on enjoying the conversation. The best food warming mat offers even heating, so every serving stays mouthwateringly warm without overcooking. Whether you are keeping pancakes fluffy or sauces silky, the right warming mat makes dining feel effortless and special.</p>
+          <p class="reveal">Beyond entertaining, a compact warming mat can transform everyday routines. Place one on your countertop to keep coffee or tea at the ideal sipping temperature, or use a warming mat for food prep to keep sauces smooth while you finish other tasks. Parents appreciate how a warming mat keeps meals ready for different schedules, making family dinners a breeze. With thoughtful safety features and sleek designs, a modern food warming mat blends seamlessly into any kitchen aesthetic.</p>
+          <p class="reveal">Choosing a warming mat also supports mindful cooking. Instead of reheating leftovers over and over, you maintain food quality and reduce waste. Guests arriving late still enjoy meals that taste freshly prepared, and you gain confidence hosting any occasion. When you invest in a versatile warming mat, you invest in delicious moments shared at the table, warm conversations, and kitchen calm.</p>
         </article>
       </div>
     </section>
@@ -265,14 +285,38 @@
 
   <footer class="bg-slate-900 text-slate-300">
     <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-      <p>&copy; <span id="year"></span> Warming Mat Hub. All rights reserved.</p>
+      <p>&copy; <span id="year">2025</span> Warming Mat Hub. All rights reserved.</p>
       <p class="text-sm">Curated warming mat research with direct links to the brand&apos;s official Amazon profile for easy shopping.</p>
       <a href="#home" class="text-sm text-amber-400 hover:text-amber-300">Back to top</a>
     </div>
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+
+    const revealElements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.18,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach((element) => {
+      if (element.dataset.revealImmediate === 'true') {
+        element.classList.add('is-visible');
+      } else {
+        observer.observe(element);
+      }
+    });
   </script>
 </body>
 </html>
