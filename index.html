@@ -173,21 +173,37 @@
 <body class="bg-slate-100 text-slate-800">
   <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded-full">Skip to content</a>
 
-  <header class="shadow-sm bg-white/95 backdrop-blur supports-backdrop-blur:backdrop-blur-lg sticky top-0 z-40">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-      <a href="#home" class="text-xl font-semibold text-slate-900" aria-label="Warming Mat Hub home">Warming Mat Hub</a>
-      <nav class="hidden md:flex gap-6 text-sm font-medium" aria-label="Primary">
-        <a href="#home" class="hover:text-amber-600">Home</a>
-        <a href="#features" class="hover:text-amber-600">Features</a>
-        <a href="#guide" class="hover:text-amber-600">Guide</a>
-        <a href="#faq" class="hover:text-amber-600">FAQ</a>
-      </nav>
-      <a href="https://www.amazon.com/dp/example" rel="noopener noreferrer" class="md:hidden inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-amber-600 rounded-full shadow hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-600">Shop Warming Mat</a>
+  <header class="fixed top-0 left-0 right-0 z-40 bg-transparent">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex w-full items-center gap-3 py-4">
+        <nav class="hidden md:flex mx-auto items-center gap-5 rounded-full bg-slate-900/90 px-6 py-2 shadow-2xl ring-1 ring-white/10 backdrop-blur" aria-label="Primary">
+          <a href="#home" class="text-xl font-black tracking-tight text-white hover:text-amber-300 transition-colors" aria-label="WarmingMat home"><span class="text-amber-400">Warming</span><span>Mat</span></a>
+          <a href="#features" class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">Features</a>
+          <a href="#guide" class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">Guide</a>
+          <a href="#faq" class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">FAQ</a>
+          <a href="https://www.amazon.com/dp/example" rel="noopener noreferrer" class="inline-flex items-center rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-900 shadow-inner shadow-amber-500/40 hover:bg-amber-300 transition-colors">Shop</a>
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden ml-auto inline-flex items-center justify-center rounded-full bg-slate-900/90 px-3 py-2 text-white shadow ring-1 ring-white/20 transition" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden mt-4 flex-col gap-4 rounded-3xl bg-slate-900/92 px-5 py-6 shadow-xl ring-1 ring-white/10 backdrop-blur">
+        <a href="#home" class="text-2xl font-black tracking-tight text-slate-100" aria-label="WarmingMat home"><span class="text-amber-400">Warming</span><span>Mat</span></a>
+        <div class="flex flex-col gap-3">
+          <a href="#features" class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors">Features</a>
+          <a href="#guide" class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors">Guide</a>
+          <a href="#faq" class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors">FAQ</a>
+        </div>
+        <a href="https://www.amazon.com/dp/example" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 transition-colors">Shop the Food Warming Mat</a>
+      </div>
     </div>
   </header>
 
   <main id="main-content">
-    <section id="home" class="hero-bg bg-cover bg-center text-white">
+    <section id="home" class="hero-bg bg-cover bg-center text-white pt-28 md:pt-36">
       <div class="max-w-5xl mx-auto px-6 py-24 md:py-32 lg:py-40 flex flex-col gap-8">
         <div class="max-w-3xl space-y-4">
           <p class="uppercase tracking-[0.35em] text-amber-300 text-xs md:text-sm">Food Warming Mat Experts</p>
@@ -317,6 +333,16 @@
         observer.observe(element);
       }
     });
+
+    const mobileButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileButton && mobileMenu) {
+      mobileButton.addEventListener('click', () => {
+        const expanded = mobileButton.getAttribute('aria-expanded') === 'true';
+        mobileButton.setAttribute('aria-expanded', (!expanded).toString());
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
   </script>
 </body>
 </html>
