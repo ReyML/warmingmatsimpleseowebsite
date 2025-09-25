@@ -212,7 +212,7 @@
           <a href="#features" class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">Features</a>
           <a href="#guide" class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">Guide</a>
           <a href="#faq" class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">FAQ</a>
-          <a href="https://www.amazon.com/dp/example" rel="noopener noreferrer" class="inline-flex items-center rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-900 shadow-inner shadow-amber-500/40 hover:bg-amber-300 transition-colors">Shop</a>
+          <a href="#coming-soon" class="coming-soon-trigger inline-flex items-center rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-900 shadow-inner shadow-amber-500/40 hover:bg-amber-300 transition-colors" role="button">Shop</a>
         </nav>
         <button id="mobile-menu-button" class="md:hidden ml-auto inline-flex items-center justify-center rounded-full bg-slate-900/90 px-3 py-2 text-white shadow ring-1 ring-white/20 transition" aria-expanded="false" aria-controls="mobile-menu">
           <span class="sr-only">Toggle navigation</span>
@@ -228,7 +228,7 @@
           <a href="#guide" class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors">Guide</a>
           <a href="#faq" class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors mb-2">FAQ</a>
         </div>
-        <a href="https://www.amazon.com/dp/example" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 transition-colors">Shop the Food Warming Mat</a>
+        <a href="#coming-soon" class="coming-soon-trigger inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 transition-colors" role="button">Shop the Food Warming Mat</a>
       </div>
     </div>
   </header>
@@ -242,7 +242,7 @@
           <p class="text-lg md:text-xl text-slate-100">Master dinner parties, potlucks, and everyday meals with a warming mat for food that delivers even heat, smart safety, and stress-free hosting. Dive into our warming mat guide to compare models, learn pro tips, and shop confidently.</p>
         </div>
         <div class="flex flex-col sm:flex-row sm:items-center gap-4">
-          <a href="https://www.amazon.com/dp/example" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-amber-400 text-slate-900 rounded-full shadow-soft hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300 transition-transform duration-300 hover:-translate-y-1 cta-floating reveal" data-reveal-immediate="true">Shop the Food Warming Mat on Amazon <span class="ml-2 text-sm tracking-wide uppercase text-slate-800">(Coming Soon)</span></a>
+          <a href="#coming-soon" class="coming-soon-trigger inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-amber-400 text-slate-900 rounded-full shadow-soft hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300 transition-transform duration-300 hover:-translate-y-1 cta-floating reveal" data-reveal-immediate="true" role="button">Shop the Food Warming Mat on Amazon <span class="ml-2 text-sm tracking-wide uppercase text-slate-800">(Coming Soon)</span></a>
           <a href="#guide" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold border border-white/70 text-white rounded-full hover:bg-white/10 focus:outline-none focus:ring-4 focus:ring-white/30 transition-transform duration-300 hover:-translate-y-1 reveal" data-reveal-immediate="true">Read the Buying Guide</a>
         </div>
         <div class="grid gap-6 md:grid-cols-3">
@@ -355,6 +355,12 @@
               <p class="mt-2 text-sm md:text-base">Use the warming mat for proofing dough, keeping beverages cozy, warming baby bottles, or crafting charcuterie spreads—unlock endless possibilities.</p>
             </article>
           </div>
+          <div class="pt-2 reveal">
+            <a href="/programmatic/graphene-buffet-warming-mat/" class="inline-flex items-center gap-2 rounded-full bg-amber-400 px-6 py-3 text-slate-900 font-semibold shadow hover:bg-amber-300">
+              Explore Graphene Buffet Warming Mat Guide
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
         </div>
         <div class="space-y-6">
           <div class="grid gap-4">
@@ -376,7 +382,7 @@
       <div class="max-w-4xl mx-auto px-6 py-16">
         <h2 class="text-3xl font-bold text-slate-900 mb-6">Food Warming Mat FAQs</h2>
         <div class="space-y-4 text-slate-700">
-          <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6" open>
+          <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6">
             <summary class="text-lg font-semibold cursor-pointer">How does a food warming mat keep dishes hot without overcooking?</summary>
             <p class="mt-3 leading-relaxed">A modern food warming mat uses gentle, even heating elements across the surface so appetizers, casseroles, and desserts stay at the ideal serving temperature without scorching or drying out. The consistent warmth preserves texture and flavor for every bite.</p>
           </details>
@@ -392,6 +398,20 @@
       </div>
     </section>
   </main>
+
+  <div id="coming-soon-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/80 backdrop-blur-sm px-6" role="dialog" aria-modal="true" aria-labelledby="coming-soon-title" aria-hidden="true">
+    <div class="relative w-full max-w-md rounded-3xl bg-white p-8 text-slate-800 shadow-2xl">
+      <button id="coming-soon-close" type="button" class="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-400" aria-label="Close coming soon message">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h3 id="coming-soon-title" class="text-2xl font-bold text-slate-900">Coming Soon</h3>
+      <p class="mt-3 text-slate-600">Our curated warming mat picks are almost ready. Check back shortly to shop the full collection or continue exploring the guide to discover how graphene heating transforms every meal.</p>
+      <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <button id="coming-soon-ok" type="button" class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300">Got it</button>
+        <a href="#advantages" class="inline-flex w-full items-center justify-center rounded-full border border-slate-200 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-200">See Warming Mat Advantages</a>
+      </div>
+    </div>
+  </div>
 
   <footer class="bg-slate-900 text-slate-300">
     <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
@@ -437,6 +457,50 @@
         mobileMenu.classList.toggle('hidden');
       });
     }
+
+    const comingSoonModal = document.getElementById('coming-soon-modal');
+    const comingSoonClose = document.getElementById('coming-soon-close');
+    const comingSoonOk = document.getElementById('coming-soon-ok');
+    const comingSoonTriggers = document.querySelectorAll('.coming-soon-trigger');
+
+    const openComingSoon = (event) => {
+      if (event) event.preventDefault();
+      if (!comingSoonModal) return;
+      comingSoonModal.classList.remove('hidden');
+      comingSoonModal.classList.add('flex');
+      comingSoonModal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('overflow-hidden');
+      if (comingSoonOk) comingSoonOk.focus();
+    };
+
+    const closeComingSoon = () => {
+      if (!comingSoonModal) return;
+      comingSoonModal.classList.add('hidden');
+      comingSoonModal.classList.remove('flex');
+      comingSoonModal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('overflow-hidden');
+    };
+
+    comingSoonTriggers.forEach((trigger) => {
+      trigger.addEventListener('click', openComingSoon);
+    });
+
+    if (comingSoonClose) comingSoonClose.addEventListener('click', closeComingSoon);
+    if (comingSoonOk) comingSoonOk.addEventListener('click', closeComingSoon);
+
+    if (comingSoonModal) {
+      comingSoonModal.addEventListener('click', (event) => {
+        if (event.target === comingSoonModal) {
+          closeComingSoon();
+        }
+      });
+    }
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeComingSoon();
+      }
+    });
 
   </script>
 </body>

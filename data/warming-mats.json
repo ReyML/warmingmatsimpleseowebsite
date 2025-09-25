@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "graphene-buffet-warming-mat",
+    "title": "Graphene Buffet Warming Mat | Rapid Heat & Smart Control Guide",
+    "metaDescription": "Discover the best graphene buffet warming mat with rapid 8-second heat, precise control, and child-safe features for flawless events.",
+    "heroHeading": "Graphene Buffet Warming Mat: Instant Heat for Flawless Events",
+    "heroDescription": "Host brunches, potlucks, and catered dinners with a graphene-powered warming mat that keeps every serving platter perfectly warm without hotspots.",
+    "primaryKeyword": "graphene buffet warming mat",
+    "secondaryKeywords": [
+      "graphene heating mat for food",
+      "buffet warming mat",
+      "smart warming mat"
+    ],
+    "useCase": "buffet & catering stations",
+    "audience": "event hosts and caterers",
+    "heroImage": "/assets/panel1.png",
+    "features": [
+      "Graphene heating tech delivers 8-second warm-up and even heat distribution across full buffet trays.",
+      "Twist-to-set temperature control keeps appetizers, mains, and desserts at precise serving temps.",
+      "Detachable controller and rollable mat allow effortless transport between venues.",
+      "Child lock, smart timer, and 6-hour auto shut-off add peace of mind for family-style events.",
+      "Premium odor-free materials stay compatible with stainless, ceramic, and bamboo servingware."
+    ],
+    "specs": [
+      { "label": "Mat Length", "value": "48 inches" },
+      { "label": "Surface", "value": "Graphene-infused silicone" },
+      { "label": "Heat Range", "value": "95°F – 203°F" },
+      { "label": "Auto Shut-Off", "value": "6 hours" }
+    ],
+    "faqs": [
+      {
+        "question": "Can this warming mat safely hold multiple buffet dishes?",
+        "answer": "Yes. The graphene core keeps a consistent temperature across the entire surface, so you can arrange two chafing dishes or several appetizer platters without cold spots."
+      },
+      {
+        "question": "How portable is the graphene buffet warming mat?",
+        "answer": "The flexible body rolls up and the controller detaches, making it simple to pack inside catering totes or drawers after the event."
+      },
+      {
+        "question": "Does the mat produce any odor while heating?",
+        "answer": "No. The odor-free, food-safe materials are designed to heat cleanly so your menu aromas remain the focus." 
+      }
+    ],
+    "ctaLink": "#coming-soon",
+    "ctaLabel": "Shop Graphene Buffet Mat",
+    "schema": {
+      "price": "129.99",
+      "ratingValue": "4.9",
+      "reviewCount": "62"
+    }
+  }
+]
