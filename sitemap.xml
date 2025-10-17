@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.warmingmat.shop/</loc>
-    <lastmod>2024-09-25</lastmod>
+    <loc>https://www.warmingmat.shop</loc>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.warmingmat.shop/how-to-use/</loc>
-    <lastmod>2024-10-03</lastmod>
+    <loc>https://www.warmingmat.shop/how-to-use</loc>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.warmingmat.shop/safety-tips/</loc>
-    <lastmod>2024-10-03</lastmod>
+    <loc>https://www.warmingmat.shop/safety-tips</loc>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.warmingmat.shop/cleaning-maintenance/</loc>
-    <lastmod>2024-10-03</lastmod>
+    <loc>https://www.warmingmat.shop/cleaning-maintenance</loc>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.warmingmat.shop/troubleshooting/</loc>
-    <lastmod>2024-10-03</lastmod>
+    <loc>https://www.warmingmat.shop/troubleshooting</loc>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.warmingmat.shop/programmatic/graphene-buffet-warming-mat/</loc>
-    <lastmod>2024-09-25</lastmod>
+    <loc>https://www.warmingmat.shop/programmatic/graphene-buffet-warming-mat</loc>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.warmingmat.shop/assets/guide.pdf</loc>
-    <lastmod>2024-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
 </urlset>
