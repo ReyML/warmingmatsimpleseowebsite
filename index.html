@@ -71,7 +71,8 @@
 
     .hero-bg {
       background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.95)), url('./assets/hero.jpeg');
-      background-attachment: fixed;
+      background-position: bottom center;
+      background-repeat: no-repeat;
     }
 
     .glass-card-hero {
@@ -261,8 +262,8 @@
   <header class="fixed top-0 left-0 right-0 z-40 bg-transparent">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="flex w-full items-center gap-3 py-6">
-        <nav
-          class="hidden md:flex mx-auto items-center gap-8 rounded-full glass-nav px-8 py-3 shadow-2xl ring-1 ring-white/10"
+        <nav id="desktop-nav"
+          class="hidden md:flex fixed bottom-8 left-1/2 -translate-x-1/2 z-50 items-center gap-8 rounded-full glass-nav px-8 py-3 shadow-2xl ring-1 ring-white/10 transition-transform duration-300"
           aria-label="Primary">
           <a href="#home" class="text-xl font-black tracking-tight text-white hover:text-amber-300 transition-colors"
             aria-label="WarmingMat home"><span class="text-amber-400">Warming</span><span>Mat</span></a>
@@ -305,7 +306,7 @@
 
   <main id="main-content">
     <section id="home"
-      class="hero-bg bg-cover bg-center text-white min-h-[85vh] flex items-center justify-center relative pt-24 pb-20 overflow-hidden">
+      class="hero-bg bg-cover bg-bottom text-white min-h-[85vh] flex items-center justify-center relative pt-24 pb-20 overflow-hidden">
       <div class="absolute inset-0 bg-black/40"></div>
       <div class="max-w-5xl mx-auto px-6 w-full relative z-10 text-center">
         <div class="space-y-8">
@@ -759,41 +760,68 @@
   </footer>
 
   <script>
-    const yearEl = document.getElementById('year');
-    if (yearEl) {
-      yearEl.textContent = new Date().getFullYear();
-    }
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
 
-    const revealElements = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          obs.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.18,
-      rootMargin: '0px 0px -40px 0px'
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !isExpanded);
     });
 
-    revealElements.forEach((element) => {
-      if (element.dataset.revealImmediate === 'true') {
-        element.classList.add('is-visible');
+    // Desktop Nav Scroll Behavior (Smart Hide/Show)
+    let lastScrollTop = 0;
+    const desktopNav = document.getElementById('desktop-nav');
+    const scrollThreshold = 100; // Don't hide immediately at top
+
+    window.addEventListener('scroll', () => {
+      // Only apply on desktop where the nav is visible
+      if (window.innerWidth >= 768) {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+          // Scrolling DOWN -> Hide
+          // We use translate-y-[150%] to move it down off screen, 
+          // combined with the existing -translate-x-1/2
+          desktopNav.classList.add('translate-y-[150%]');
+        } else {
+          // Scrolling UP -> Show
+          desktopNav.classList.remove('translate-y-[150%]');
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      }
+    });
+
+    // Reveal animations on scroll
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach((element) => {
+      if (element.dataset.revealImmediate === "true") {
+        // Immediate reveal for hero elements
+        setTimeout(() => {
+          element.classList.add('is-visible');
+        }, 100);
       } else {
         observer.observe(element);
       }
     });
 
-    const mobileButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (mobileButton && mobileMenu) {
-      mobileButton.addEventListener('click', () => {
-        const expanded = mobileButton.getAttribute('aria-expanded') === 'true';
-        mobileButton.setAttribute('aria-expanded', (!expanded).toString());
-        mobileMenu.classList.toggle('hidden');
-      });
-    }
+
 
     const comingSoonModal = document.getElementById('coming-soon-modal');
     const comingSoonClose = document.getElementById('coming-soon-close');
