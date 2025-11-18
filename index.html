@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Best Food Warming Mat 2025 | Electric & Portable Warming Mats</title>
-  <meta name="description" content="Discover the best food warming mat of 2025. Read our expert guide on electric, portable, and graphene warming mats for food. Keep your meals perfectly warm for any occasion." />
+  <title>Warming Mat & Food Warming Mat | Best 2025 Guide & Reviews</title>
+  <meta name="description"
+    content="Discover the best warming mat and food warming mat of 2025. Expert guide on electric, portable, and graphene models to keep meals perfectly warm." />
   <link rel="canonical" href="https://www.warmingmat.shop" />
-  <meta name="keywords" content="food warming mat, warming mat for food, warming mat, electric food warming mat, portable food warming mat, buffet warming tray, graphene warming mat, electric warming tray, rollable warming mat, foldable warming mat, silicone warming mat" />
+  <meta name="keywords"
+    content="food warming mat, warming mat for food, warming mat, electric food warming mat, portable food warming mat, buffet warming tray, graphene warming mat, electric warming tray, rollable warming mat, foldable warming mat, silicone warming mat" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Warming Mat Hub" />
   <meta name="theme-color" content="#f59e0b" />
@@ -33,16 +36,20 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Warming Mat Hub" />
-  <meta property="og:title" content="Best Food Warming Mat 2025 | Electric & Portable Warming Mats" />
-  <meta property="og:description" content="Discover the best food warming mat of 2025. Read our expert guide on electric, portable, and graphene warming mats for food. Keep your meals perfectly warm for any occasion." />
+  <meta property="og:title" content="Warming Mat & Food Warming Mat | Best 2025 Guide & Reviews" />
+  <meta property="og:description"
+    content="Discover the best warming mat and food warming mat of 2025. Expert guide on electric, portable, and graphene models to keep meals perfectly warm." />
   <meta property="og:url" content="https://www.warmingmat.shop" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=80" />
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=80" />
   <meta property="og:image:alt" content="Food warming mat keeping dishes ready to serve" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Best Food Warming Mat 2025 | Electric & Portable Warming Mats" />
-  <meta name="twitter:description" content="Discover the best food warming mat of 2025. Read our expert guide on electric, portable, and graphene warming mats for food. Keep your meals perfectly warm for any occasion." />
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=80" />
+  <meta name="twitter:title" content="Warming Mat & Food Warming Mat | Best 2025 Guide & Reviews" />
+  <meta name="twitter:description"
+    content="Discover the best warming mat and food warming mat of 2025. Expert guide on electric, portable, and graphene models to keep meals perfectly warm." />
+  <meta name="twitter:image"
+    content="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=80" />
   <meta name="twitter:image:alt" content="Close-up of a warming mat keeping food hot" />
   <meta name="twitter:site" content="@WarmingMatHub" />
   <meta name="twitter:creator" content="@WarmingMatHub" />
@@ -57,32 +64,87 @@
     :root {
       color-scheme: light;
     }
+
     body {
       font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     }
+
     .hero-bg {
-      background-image: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.55)), url('https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=80');
+      background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.95)), url('./assets/hero.jpeg');
+      background-attachment: fixed;
     }
+
+    .glass-card-hero {
+      /* Removed heavy glass card for cleaner look, using subtle gradient instead if needed, 
+         but for now relying on text shadow and background dimming */
+      display: none;
+    }
+
+    .text-shadow-sm {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .bento-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .bento-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 250px);
+      }
+
+      .bento-item-1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+      }
+
+      .bento-item-2 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      }
+
+      .bento-item-3 {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+      }
+    }
+
     .shadow-soft {
-      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     }
+
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
     .reveal {
       opacity: 0;
       transform: translateY(24px);
       transition: opacity 0.6s ease, transform 0.6s ease;
     }
+
     .reveal.is-visible {
       opacity: 1;
       transform: translateY(0);
     }
+
     @keyframes floaty {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translateY(0);
       }
+
       50% {
         transform: translateY(-6px);
       }
     }
+
     .cta-floating {
       animation: floaty 4s ease-in-out infinite;
     }
@@ -92,7 +154,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NXJMMWG0X9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-NXJMMWG0X9');
@@ -171,163 +233,353 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Warming Mat: The Ultimate Guide to Food Warming Mats",
+    "image": [
+      "https://www.warmingmat.shop/assets/front_cream.JPG",
+      "https://www.warmingmat.shop/assets/top_cream.JPG"
+    ],
+    "datePublished": "2025-10-17T08:00:00+08:00",
+    "dateModified": "2025-11-18T09:20:00+08:00",
+    "author": [{
+      "@type": "Organization",
+      "name": "Warming Mat Hub",
+      "url": "https://www.warmingmat.shop/"
+    }]
+  }
+  </script>
 </head>
+
 <body class="bg-slate-100 text-slate-800">
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded-full">Skip to content</a>
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded-full">Skip
+    to content</a>
 
   <header class="fixed top-0 left-0 right-0 z-40 bg-transparent">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="flex w-full items-center gap-3 py-4">
-        <nav class="hidden md:flex mx-auto items-center gap-5 rounded-full bg-slate-900/90 px-6 py-2 shadow-2xl ring-1 ring-white/10 backdrop-blur" aria-label="Primary">
-          <a href="#home" class="text-xl font-black tracking-tight text-white hover:text-amber-300 transition-colors" aria-label="WarmingMat home"><span class="text-amber-400">Warming</span><span>Mat</span></a>
-          <a href="#features" class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">Features</a>
+      <div class="flex w-full items-center gap-3 py-6">
+        <nav
+          class="hidden md:flex mx-auto items-center gap-8 rounded-full glass-nav px-8 py-3 shadow-2xl ring-1 ring-white/10"
+          aria-label="Primary">
+          <a href="#home" class="text-xl font-black tracking-tight text-white hover:text-amber-300 transition-colors"
+            aria-label="WarmingMat home"><span class="text-amber-400">Warming</span><span>Mat</span></a>
+          <a href="#features"
+            class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">Features</a>
           <a href="#guide" class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">Guide</a>
           <a href="#faq" class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">FAQ</a>
-          <a href="#coming-soon" class="coming-soon-trigger inline-flex items-center rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-900 shadow-inner shadow-amber-500/40 hover:bg-amber-300 transition-colors" role="button">Shop</a>
+          <a href="#coming-soon"
+            class="coming-soon-trigger inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-bold text-slate-900 shadow-lg hover:bg-slate-100 transition-all hover:scale-105"
+            role="button">Shop Now</a>
         </nav>
-        <button id="mobile-menu-button" class="md:hidden ml-auto inline-flex items-center justify-center rounded-full bg-slate-900/90 px-3 py-2 text-white shadow ring-1 ring-white/20 transition" aria-expanded="false" aria-controls="mobile-menu">
+        <button id="mobile-menu-button"
+          class="md:hidden ml-auto inline-flex items-center justify-center rounded-full bg-slate-900/90 px-3 py-2 text-white shadow ring-1 ring-white/20 transition"
+          aria-expanded="false" aria-controls="mobile-menu">
           <span class="sr-only">Toggle navigation</span>
-          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+            stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 7h16M4 12h16M4 17h16" />
           </svg>
         </button>
       </div>
-      <div id="mobile-menu" class="md:hidden hidden mt-4 flex-col gap-4 rounded-3xl bg-slate-900/92 px-5 py-6 shadow-xl ring-1 ring-white/10 backdrop-blur">
-        <a href="#home" class="text-2xl font-black tracking-tight text-slate-100" aria-label="WarmingMat home"><span class="text-amber-400">Warming</span><span>Mat</span></a>
+      <div id="mobile-menu"
+        class="md:hidden hidden mt-4 flex-col gap-4 rounded-3xl bg-slate-900/92 px-5 py-6 shadow-xl ring-1 ring-white/10 backdrop-blur">
+        <a href="#home" class="text-2xl font-black tracking-tight text-slate-100" aria-label="WarmingMat home"><span
+            class="text-amber-400">Warming</span><span>Mat</span></a>
         <div class="flex flex-col gap-3">
-          <a href="#features" class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors">Features</a>
-          <a href="#guide" class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors">Guide</a>
-          <a href="#faq" class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors mb-2">FAQ</a>
+          <a href="#features"
+            class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors">Features</a>
+          <a href="#guide"
+            class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors">Guide</a>
+          <a href="#faq"
+            class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors mb-2">FAQ</a>
         </div>
-        <a href="#coming-soon" class="coming-soon-trigger inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 transition-colors" role="button">Shop the Food Warming Mat</a>
+        <a href="#coming-soon"
+          class="coming-soon-trigger inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 transition-colors"
+          role="button">Shop the Food Warming Mat</a>
       </div>
     </div>
   </header>
 
   <main id="main-content">
-    <section id="home" class="hero-bg bg-cover bg-center text-white pt-16 md:pt-24">
-      <div class="max-w-5xl mx-auto px-6 py-24 md:py-32 lg:py-40 flex flex-col gap-8">
-        <div class="max-w-3xl space-y-4">
-          <p class="uppercase tracking-[0.35em] text-amber-300 text-xs md:text-sm">Food Warming Mat Experts</p>
-          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">The Ultimate Guide to Food Warming Mats</h1>
-          <p class="text-lg md:text-xl text-slate-100">Tired of cold dishes at your dinner parties? A food warming mat is the perfect solution. Our guide will help you choose the best electric, portable, or graphene warming mat for your needs. We'll cover everything from features to safety tips, so you can buy with confidence.</p>
-        </div>
-        <div class="flex flex-col sm:flex-row sm:items-center gap-4">
-          <a href="#coming-soon" class="coming-soon-trigger inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-amber-400 text-slate-900 rounded-full shadow-soft hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300 transition-transform duration-300 hover:-translate-y-1 cta-floating reveal" data-reveal-immediate="true" role="button">Shop the Food Warming Mat on Amazon <span class="ml-2 text-sm tracking-wide uppercase text-slate-800">(Coming Soon)</span></a>
-          <a href="#guide" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold border border-white/70 text-white rounded-full hover:bg-white/10 focus:outline-none focus:ring-4 focus:ring-white/30 transition-transform duration-300 hover:-translate-y-1 reveal" data-reveal-immediate="true">Read the Buying Guide</a>
-        </div>
-        <div class="grid gap-6 md:grid-cols-3">
-          <img src="./assets/front_cream.JPG" alt="A cream-colored electric food warming mat on a kitchen counter, keeping a casserole dish warm." class="w-full rounded-xl shadow-lg reveal object-cover" loading="lazy" data-reveal-immediate="true" />
-          <img src="./assets/side_cream.JPG" alt="Side view of a portable food warming mat, showing its slim and lightweight design." class="w-full rounded-xl shadow-lg hidden md:block reveal object-cover" loading="lazy" data-reveal-immediate="true" />
-          <img src="./assets/top_cream.JPG" alt="Top-down view of a graphene warming mat with several dishes on it, demonstrating its even heat distribution." class="w-full rounded-xl shadow-lg hidden lg:block reveal object-cover" loading="lazy" data-reveal-immediate="true" />
+    <section id="home"
+      class="hero-bg bg-cover bg-center text-white min-h-[85vh] flex items-center justify-center relative pt-24 pb-20 overflow-hidden">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="max-w-5xl mx-auto px-6 w-full relative z-10 text-center">
+        <div class="space-y-8">
+          <div class="space-y-6">
+            <p class="uppercase tracking-[0.3em] text-white/90 text-sm font-bold animate-pulse">The Future of Dining</p>
+            <h1 class="text-6xl md:text-8xl font-black leading-tight tracking-tighter drop-shadow-2xl text-white">
+              Warming Mat
+            </h1>
+            <p
+              class="text-xl md:text-3xl text-white/90 font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-lg text-shadow-sm">
+              The Ultimate Guide to Food Warming Mats. Keep your dishes perfectly warm with the best electric, portable,
+              and graphene technology.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row sm:items-center justify-center gap-5 pt-6">
+            <a href="#coming-soon"
+              class="coming-soon-trigger inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-slate-900 transition-all duration-200 bg-white rounded-full hover:bg-slate-100 hover:scale-105 shadow-xl"
+              role="button">
+              Shop Now
+            </a>
+            <a href="#guide"
+              class="inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white transition-all duration-200 border-2 border-white rounded-full hover:bg-white/10 hover:scale-105 backdrop-blur-sm">
+              Read Guide
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="features" class="bg-white">
-      <div class="max-w-5xl mx-auto px-6 py-16">
+    <section id="showcase" class="bg-slate-50 py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-4">Designed for Modern Living</h2>
+          <p class="text-xl text-slate-600 max-w-2xl mx-auto">Experience the perfect blend of aesthetics and
+            functionality with our premium warming mats.</p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Main Feature Image -->
+          <div class="bento-item-1 group relative rounded-3xl overflow-hidden shadow-xl bg-white">
+            <img src="./assets/front_cream.JPG"
+              alt="A cream-colored electric food warming mat on a kitchen counter, keeping a casserole dish warm."
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy"
+              width="800" height="600" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80">
+            </div>
+            <div class="absolute bottom-8 left-8 text-white">
+              <h3 class="text-3xl font-bold mb-2">Elegant Design</h3>
+              <p class="text-white/90 text-lg">Seamlessly blends with your kitchen decor.</p>
+            </div>
+          </div>
+
+          <!-- Secondary Image 1 -->
+          <div class="bento-item-2 group relative rounded-3xl overflow-hidden shadow-xl bg-white">
+            <img src="./assets/side_cream.JPG"
+              alt="Side view of a portable food warming mat, showing its slim and lightweight design."
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy"
+              width="400" height="300" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80">
+            </div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-xl font-bold mb-1">Ultra Slim</h3>
+              <p class="text-white/90 text-sm">Easy storage, anywhere.</p>
+            </div>
+          </div>
+
+          <!-- Secondary Image 2 -->
+          <div class="bento-item-3 group relative rounded-3xl overflow-hidden shadow-xl bg-white">
+            <img src="./assets/top_cream.JPG"
+              alt="Top-down view of a graphene warming mat with several dishes on it, demonstrating its even heat distribution."
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy"
+              width="400" height="300" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80">
+            </div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-xl font-bold mb-1">Even Heating</h3>
+              <p class="text-white/90 text-sm">No cold spots, ever.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="bg-white relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent">
+      </div>
+      <div class="max-w-6xl mx-auto px-6 py-24 md:py-32">
         <header class="mb-6 space-y-3 reveal">
           <h2 class="text-3xl font-bold text-slate-900">Key Features of the Best Food Warming Mats</h2>
-          <p class="text-slate-600">When shopping for a food warming mat, there are a few key features to look for. A good warming mat will have even heat distribution, adjustable temperature control, and a slim, portable design. It should also be made from safety-first materials and be easy to clean.</p>
+          <p class="text-slate-600">When shopping for a food warming mat, there are a few key features to look for. A
+            good warming mat will have even heat distribution, adjustable temperature control, and a slim, portable
+            design. It should also be made from safety-first materials and be easy to clean.</p>
         </header>
-        <ul class="grid gap-6 md:grid-cols-2 list-disc list-inside text-slate-700">
-          <li class="reveal"><strong>Even heat distribution:</strong> A quality food warming mat uses advanced technology to deliver consistent warmth from edge to edge. This ensures that your food stays at the perfect serving temperature without getting cold or overcooked.</li>
-          <li class="reveal"><strong>Adjustable temperature control:</strong> The best food warming mats have adjustable temperature settings, so you can customize the heat level for different dishes. This is especially important for delicate foods like sauces and desserts.</li>
-          <li class="reveal"><strong>Slim, portable design:</strong> A portable food warming mat is a great option for potlucks, picnics, and other events. Look for a lightweight and rollable or foldable design that is easy to transport and store.</li>
-          <li class="reveal"><strong>Safety-first materials:</strong> When it comes to electric appliances, safety is always a top priority. Choose a food warming mat with features like auto shut-off, cool-touch edges, and a child lock.</li>
-          <li class="reveal"><strong>Effortless cleanup:</strong> A silicone warming mat is a great option for easy cleanup. Simply wipe it down with a damp cloth or place it in the dishwasher.</li>
+        <ul class="grid gap-8 md:grid-cols-2 text-slate-700">
+          <li
+            class="reveal p-6 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-slate-100">
+            <strong class="block text-lg text-slate-900 mb-2">Even heat distribution</strong>
+            A quality food warming mat uses advanced technology to deliver consistent warmth from edge to edge. This
+            ensures that your food stays at the perfect serving temperature without getting cold or overcooked.
+          </li>
+          <li
+            class="reveal p-6 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-slate-100">
+            <strong class="block text-lg text-slate-900 mb-2">Adjustable temperature control</strong>
+            The best food warming mats have adjustable temperature settings, so you can customize the heat level for
+            different dishes. This is especially important for delicate foods like sauces and desserts.
+          </li>
+          <li
+            class="reveal p-6 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-slate-100">
+            <strong class="block text-lg text-slate-900 mb-2">Slim, portable design</strong>
+            A portable food warming mat is a great option for potlucks, picnics, and other events. Look for a
+            lightweight and rollable or foldable design that is easy to transport and store.
+          </li>
+          <li
+            class="reveal p-6 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-slate-100">
+            <strong class="block text-lg text-slate-900 mb-2">Safety-first materials</strong>
+            When it comes to electric appliances, safety is always a top priority. Choose a food warming mat with
+            features like auto shut-off, cool-touch edges, and a child lock.
+          </li>
+          <li
+            class="reveal p-6 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-slate-100">
+            <strong class="block text-lg text-slate-900 mb-2">Effortless cleanup</strong>
+            A silicone warming mat is a great option for easy cleanup. Simply wipe it down with a damp cloth or place it
+            in the dishwasher.
+          </li>
         </ul>
-        <p class="mt-8 text-slate-600 reveal">Want more? Jump down to our <a href="#guide" class="text-amber-600 font-semibold hover:text-amber-500">warming mat buying guide</a> for insider tips and comparison ideas, explore our <a href="/how-to-use" class="text-amber-600 font-semibold hover:text-amber-500">how to use guide</a>, or <a href="/assets/guide.pdf" class="text-amber-600 font-semibold hover:text-amber-500" download>download our complete food warming mat guide PDF</a>.</p>
+        <p class="mt-8 text-slate-600 reveal">Want more? Jump down to our <a href="#guide"
+            class="text-amber-600 font-semibold hover:text-amber-500">warming mat buying guide</a> for insider tips and
+          comparison ideas, explore our <a href="/how-to-use"
+            class="text-amber-600 font-semibold hover:text-amber-500">how to use guide</a>, or <a
+            href="/assets/guide.pdf" class="text-amber-600 font-semibold hover:text-amber-500" download>download our
+            complete food warming mat guide PDF</a>.</p>
       </div>
     </section>
 
     <section id="why" class="bg-slate-50">
-      <div class="max-w-4xl mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-slate-900 mb-6 reveal">Why a Food Warming Mat is a Must-Have Kitchen Appliance</h2>
+      <div class="max-w-5xl mx-auto px-6 py-24 md:py-32">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6 reveal">Why a Food Warming Mat is a Must-Have Kitchen
+          Appliance</h2>
         <article class="space-y-6 text-slate-700 leading-relaxed">
-          <p class="reveal">A food warming mat is one of the most versatile and useful kitchen appliances you can own. Whether you're an avid entertainer or just want to make weeknight dinners a little easier, a warming mat can be a game-changer. No more cold dishes or last-minute reheating in the microwave. With a food warming mat, you can keep your food at the perfect serving temperature for hours.</p>
-          <p class="reveal">A buffet warming tray is perfect for holiday gatherings, potlucks, and other events. It allows you to set out a variety of dishes and keep them all warm and ready to eat. And because the best food warming mats have adjustable temperature settings, you can be sure that each dish is at its ideal temperature. For more tips on hosting a successful buffet, check out this article on <a href="https://www.foodandwine.com/lifestyle/entertaining/buffet-style-dinner-party" class="text-amber-600 font-semibold hover:text-amber-500" target="_blank" rel="noopener noreferrer">how to throw a buffet-style dinner party</a>.</p>
-          <p class="reveal">But a food warming mat isn't just for special occasions. A portable food warming mat is great for everyday use. You can use it to keep your coffee or tea warm, or to keep sauces and other dishes at the right temperature while you're cooking. A silicone warming mat is also a great way to protect your countertops from hot dishes.</p>
-          <p class="reveal">Investing in a quality food warming mat is an investment in your peace of mind. You'll no longer have to worry about your food getting cold or overcooked. You can relax and enjoy your time with your guests, knowing that your food is in good hands.</p>
+          <p class="reveal">A food warming mat is one of the most versatile and useful kitchen appliances you can own.
+            Whether you're an avid entertainer or just want to make weeknight dinners a little easier, a warming mat can
+            be a game-changer. No more cold dishes or last-minute reheating in the microwave. With a food warming mat,
+            you can keep your food at the perfect serving temperature for hours.</p>
+          <p class="reveal">A buffet warming tray is perfect for holiday gatherings, potlucks, and other events. It
+            allows you to set out a variety of dishes and keep them all warm and ready to eat. And because the best food
+            warming mats have adjustable temperature settings, you can be sure that each dish is at its ideal
+            temperature. For more tips on hosting a successful buffet, check out this article on <a
+              href="https://www.foodandwine.com/lifestyle/entertaining/buffet-style-dinner-party"
+              class="text-amber-600 font-semibold hover:text-amber-500" target="_blank" rel="noopener noreferrer">how to
+              throw a buffet-style dinner party</a>.</p>
+          <p class="reveal">But a food warming mat isn't just for special occasions. A portable food warming mat is
+            great for everyday use. You can use it to keep your coffee or tea warm, or to keep sauces and other dishes
+            at the right temperature while you're cooking. A silicone warming mat is also a great way to protect your
+            countertops from hot dishes.</p>
+          <p class="reveal">Investing in a quality food warming mat is an investment in your peace of mind. You'll no
+            longer have to worry about your food getting cold or overcooked. You can relax and enjoy your time with your
+            guests, knowing that your food is in good hands.</p>
         </article>
       </div>
     </section>
 
     <section id="guide" class="bg-white">
-      <div class="max-w-5xl mx-auto px-6 py-16">
+      <div class="max-w-6xl mx-auto px-6 py-24 md:py-32">
         <header class="mb-6">
           <h2 class="text-3xl font-bold text-slate-900">How to Choose the Best Food Warming Mat</h2>
-          <p class="text-slate-600 mt-3">With so many different food warming mats on the market, it can be tough to know which one to choose. This guide will walk you through the most important factors to consider, so you can find the perfect warming mat for your needs.</p>
+          <p class="text-slate-600 mt-3">With so many different food warming mats on the market, it can be tough to know
+            which one to choose. This guide will walk you through the most important factors to consider, so you can
+            find the perfect warming mat for your needs.</p>
         </header>
         <div class="grid gap-10 md:grid-cols-2 text-slate-700">
           <div class="space-y-4">
             <h3 class="text-xl font-semibold">Key Considerations When Buying a Food Warming Mat</h3>
-            <p>When comparing food warming mats, the first thing to consider is the material. A <a href="#advantages" class="text-amber-600 font-semibold hover:text-amber-500">graphene warming mat</a> is a great option for fast, even heating. A silicone warming mat is another good choice, as it's easy to clean and durable. You should also think about the size of the mat. A large mat is great for buffets, while a smaller, portable food warming mat is perfect for everyday use.</p>
-            <p>Another important factor is the temperature control. The best food warming mats have adjustable temperature settings, so you can customize the heat level for different dishes. Some mats also have a timer and an auto shut-off feature for added safety and convenience. For a full list of features to look for, check out our <a href="#features" class="text-amber-600 font-semibold hover:text-amber-500">key features</a> section.</p>
-            <p>Finally, don't forget to consider the design. A rollable or foldable warming mat is a great option for easy storage. And if you're concerned about safety, look for a mat with cool-touch edges and a child lock.</p>
+            <p>When comparing food warming mats, the first thing to consider is the material. A <a href="#advantages"
+                class="text-amber-600 font-semibold hover:text-amber-500">graphene warming mat</a> is a great option for
+              fast, even heating. A silicone warming mat is another good choice, as it's easy to clean and durable. You
+              should also think about the size of the mat. A large mat is great for buffets, while a smaller, portable
+              food warming mat is perfect for everyday use.</p>
+            <p>Another important factor is the temperature control. The best food warming mats have adjustable
+              temperature settings, so you can customize the heat level for different dishes. Some mats also have a
+              timer and an auto shut-off feature for added safety and convenience. For a full list of features to look
+              for, check out our <a href="#features" class="text-amber-600 font-semibold hover:text-amber-500">key
+                features</a> section.</p>
+            <p>Finally, don't forget to consider the design. A rollable or foldable warming mat is a great option for
+              easy storage. And if you're concerned about safety, look for a mat with cool-touch edges and a child lock.
+            </p>
           </div>
           <div class="space-y-4">
             <h3 class="text-xl font-semibold">Pros and Cons of Food Warming Mats</h3>
             <ul class="list-disc list-inside space-y-2">
-              <li><strong>Pros:</strong> Keeps food at a safe and consistent temperature, frees up your oven and stovetop, and makes entertaining a breeze.</li>
+              <li><strong>Pros:</strong> Keeps food at a safe and consistent temperature, frees up your oven and
+                stovetop, and makes entertaining a breeze.</li>
               <li><strong>Cons:</strong> Can be an extra expense, and some models can be bulky to store.</li>
-              <li><strong>Consider:</strong> An electric warming tray is a great alternative to a traditional food warmer, as it's more versatile and easier to store.</li>
-              <li><strong>Pro tip:</strong> Use your food warming mat to warm plates before serving. This will help to keep your food warm for longer.</li>
+              <li><strong>Consider:</strong> An electric warming tray is a great alternative to a traditional food
+                warmer, as it's more versatile and easier to store.</li>
+              <li><strong>Pro tip:</strong> Use your food warming mat to warm plates before serving. This will help to
+                keep your food warm for longer.</li>
             </ul>
-            <p>Ready to compare models? Visit the Amazon listing linked above and bookmark this guide so you can reference the warming mat checklist while you browse. For advanced buffet solutions, check out our <a href="/programmatic/graphene-buffet-warming-mat" class="text-amber-600 font-semibold hover:text-amber-500">graphene buffet warming mat guide</a>. Also see our <a href="/safety-tips" class="text-amber-600 font-semibold hover:text-amber-500">safety tips</a> and <a href="/cleaning-maintenance" class="text-amber-600 font-semibold hover:text-amber-500">cleaning maintenance guide</a>.</p>
+            <p>Ready to compare models? Visit the Amazon listing linked above and bookmark this guide so you can
+              reference the warming mat checklist while you browse. For advanced buffet solutions, check out our <a
+                href="/programmatic/graphene-buffet-warming-mat"
+                class="text-amber-600 font-semibold hover:text-amber-500">graphene buffet warming mat guide</a>. Also
+              see our <a href="/safety-tips" class="text-amber-600 font-semibold hover:text-amber-500">safety tips</a>
+              and <a href="/cleaning-maintenance" class="text-amber-600 font-semibold hover:text-amber-500">cleaning
+                maintenance guide</a>.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="advantages" class="bg-slate-900/95 text-slate-100">
-      <div class="max-w-6xl mx-auto px-6 py-20 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
+    <section id="advantages" class="bg-slate-900 text-slate-100 relative overflow-hidden">
+      <div
+        class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-800 via-slate-900 to-slate-950 opacity-50">
+      </div>
+      <div class="max-w-7xl mx-auto px-6 py-32 grid gap-16 lg:grid-cols-[1.1fr_0.9fr] items-center relative z-10">
         <div class="space-y-6">
           <header class="space-y-3">
             <p class="text-xs uppercase tracking-[0.35em] text-amber-300">The Future of Food Warming</p>
             <h2 class="text-3xl md:text-4xl font-bold">Why a Graphene Warming Mat is a Game-Changer</h2>
-            <p class="text-slate-300">A graphene warming mat is the latest innovation in food warming technology. It heats up faster, distributes heat more evenly, and is more energy-efficient than traditional warming mats. Here are some of the key advantages of a graphene warming mat:</p>
+            <p class="text-slate-300">A graphene warming mat is the latest innovation in food warming technology. It
+              heats up faster, distributes heat more evenly, and is more energy-efficient than traditional warming mats.
+              Here are some of the key advantages of a graphene warming mat:</p>
           </header>
           <div class="grid gap-5">
-            <article class="glass-panel bg-white/5 p-5 rounded-2xl border border-white/10 reveal" data-reveal-immediate="true">
+            <article class="glass-panel bg-white/5 p-5 rounded-2xl border border-white/10 reveal"
+              data-reveal-immediate="true">
               <h3 class="text-xl font-semibold text-amber-300">1. Fast Heating</h3>
-              <p class="mt-2 text-sm md:text-base">A graphene warming mat can heat up in as little as 8 seconds, so you can start warming your food right away.</p>
+              <p class="mt-2 text-sm md:text-base">A graphene warming mat can heat up in as little as 8 seconds, so you
+                can start warming your food right away.</p>
             </article>
             <article class="glass-panel bg-white/5 p-5 rounded-2xl border border-white/10 reveal">
               <h3 class="text-xl font-semibold text-amber-300">2. Even Heat Distribution</h3>
-              <p class="mt-2 text-sm md:text-base">Graphene provides even heat distribution across the entire surface of the mat, so you don't have to worry about hot spots or cold spots.</p>
+              <p class="mt-2 text-sm md:text-base">Graphene provides even heat distribution across the entire surface of
+                the mat, so you don't have to worry about hot spots or cold spots.</p>
             </article>
             <article class="glass-panel bg-white/5 p-5 rounded-2xl border border-white/10 reveal">
               <h3 class="text-xl font-semibold text-amber-300">3. Energy-Efficient</h3>
-              <p class="mt-2 text-sm md:text-base">A graphene warming mat is more energy-efficient than traditional warming mats, so you can save money on your electricity bill.</p>
+              <p class="mt-2 text-sm md:text-base">A graphene warming mat is more energy-efficient than traditional
+                warming mats, so you can save money on your electricity bill.</p>
             </article>
             <article class="glass-panel bg-white/5 p-5 rounded-2xl border border-white/10 reveal">
               <h3 class="text-xl font-semibold text-amber-300">4. Flexible & Rollable</h3>
-              <p class="mt-2 text-sm md:text-base">A rollable warming mat is easy to store and transport, making it a great option for potlucks and other events.</p>
+              <p class="mt-2 text-sm md:text-base">A rollable warming mat is easy to store and transport, making it a
+                great option for potlucks and other events.</p>
             </article>
             <article class="glass-panel bg-white/5 p-5 rounded-2xl border border-white/10 reveal">
               <h3 class="text-xl font-semibold text-amber-300">5. Premium, Odor-Free Materials</h3>
-              <p class="mt-2 text-sm md:text-base">This warming mat is made from high-quality, odor-free materials that are safe for use with all types of cookware.</p>
+              <p class="mt-2 text-sm md:text-base">This warming mat is made from high-quality, odor-free materials that
+                are safe for use with all types of cookware.</p>
             </article>
             <article class="glass-panel bg-white/5 p-5 rounded-2xl border border-white/10 reveal">
               <h3 class="text-xl font-semibold text-amber-300">6. Safety First Child Lock</h3>
-              <p class="mt-2 text-sm md:text-base">A one-touch child lock keeps your settings secure, giving you peace of mind when you have children around.</p>
+              <p class="mt-2 text-sm md:text-base">A one-touch child lock keeps your settings secure, giving you peace
+                of mind when you have children around.</p>
             </article>
             <article class="glass-panel bg-white/5 p-5 rounded-2xl border border-white/10 reveal">
               <h3 class="text-xl font-semibold text-amber-300">7. Smart & Safe Auto Shut-Off</h3>
-              <p class="mt-2 text-sm md:text-base">The auto shut-off feature turns the mat off after 6 hours, so you don't have to worry about it overheating.</p>
+              <p class="mt-2 text-sm md:text-base">The auto shut-off feature turns the mat off after 6 hours, so you
+                don't have to worry about it overheating.</p>
             </article>
             <article class="glass-panel bg-white/5 p-5 rounded-2xl border border-white/10 reveal">
               <h3 class="text-xl font-semibold text-amber-300">8. Smart Timer Function</h3>
-              <p class="mt-2 text-sm md:text-base">The timer function allows you to set the warming time from 1 to 4 hours, so you can keep your food at the perfect temperature for as long as you need.</p>
+              <p class="mt-2 text-sm md:text-base">The timer function allows you to set the warming time from 1 to 4
+                hours, so you can keep your food at the perfect temperature for as long as you need.</p>
             </article>
             <article class="glass-panel bg-white/5 p-5 rounded-2xl border border-white/10 reveal">
               <h3 class="text-xl font-semibold text-amber-300">9. More Than a Warmer</h3>
-              <p class="mt-2 text-sm md:text-base">A graphene warming mat can be used for a variety of purposes, including proofing dough, warming baby bottles, and even as a foot warmer.</p>
+              <p class="mt-2 text-sm md:text-base">A graphene warming mat can be used for a variety of purposes,
+                including proofing dough, warming baby bottles, and even as a foot warmer.</p>
             </article>
           </div>
           <div class="pt-2 reveal">
-            <a href="/programmatic/graphene-buffet-warming-mat" class="inline-flex items-center gap-2 rounded-full bg-amber-400 px-6 py-3 text-slate-900 font-semibold shadow hover:bg-amber-300">
+            <a href="/programmatic/graphene-buffet-warming-mat"
+              class="inline-flex items-center gap-2 rounded-full bg-amber-400 px-6 py-3 text-slate-900 font-semibold shadow hover:bg-amber-300">
               Explore Graphene Buffet Warming Mat Guide
               <span aria-hidden="true">→</span>
             </a>
@@ -336,13 +588,17 @@
         <div class="space-y-6">
           <div class="grid gap-4">
             <figure class="reveal" data-reveal-immediate="true">
-              <img src="./assets/panel1.png" alt="A graphene food warming mat heating a variety of dishes on a buffet table." class="w-full rounded-3xl shadow-2xl" loading="lazy" />
+              <img src="./assets/panel1.png"
+                alt="A graphene food warming mat heating a variety of dishes on a buffet table."
+                class="w-full rounded-3xl shadow-2xl" loading="lazy" />
             </figure>
             <figure class="reveal">
-              <img src="./assets/panel2.png" alt="A close-up of the temperature control on a graphene warming mat." class="w-full rounded-3xl shadow-2xl" loading="lazy" />
+              <img src="./assets/panel2.png" alt="A close-up of the temperature control on a graphene warming mat."
+                class="w-full rounded-3xl shadow-2xl" loading="lazy" />
             </figure>
             <figure class="reveal">
-              <img src="./assets/panel3.png" alt="A rollable warming mat being stored in a kitchen drawer." class="w-full rounded-3xl shadow-2xl" loading="lazy" />
+              <img src="./assets/panel3.png" alt="A rollable warming mat being stored in a kitchen drawer."
+                class="w-full rounded-3xl shadow-2xl" loading="lazy" />
             </figure>
           </div>
         </div>
@@ -350,41 +606,73 @@
     </section>
 
     <section id="resources" class="bg-white">
-      <div class="max-w-5xl mx-auto px-6 py-16">
+      <div class="max-w-6xl mx-auto px-6 py-24 md:py-32">
         <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">Your Guide to Food Warming Mats</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <a href="/how-to-use/" class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-200 group">
-            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          <a href="/how-to-use/"
+            class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-200 group">
+            <div
+              class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                </path>
+              </svg>
             </div>
             <h3 class="text-xl font-bold mb-2 text-slate-900">How to Use a Food Warming Mat →</h3>
-            <p class="text-slate-700">Learn how to use your electric food warming mat to keep your food at the perfect temperature.</p>
+            <p class="text-slate-700">Learn how to use your electric food warming mat to keep your food at the perfect
+              temperature.</p>
           </a>
-          <a href="/safety-tips/" class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-red-200 group">
-            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+          <a href="/safety-tips/"
+            class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-red-200 group">
+            <div
+              class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
             </div>
             <h3 class="text-xl font-bold mb-2 text-slate-900">Food Warming Mat Safety Tips →</h3>
             <p class="text-slate-700">Read these important safety tips before using your portable food warming mat.</p>
           </a>
-          <a href="/cleaning-maintenance/" class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-emerald-200 group">
-            <div class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <a href="/cleaning-maintenance/"
+            class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-emerald-200 group">
+            <div
+              class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
             </div>
             <h3 class="text-xl font-bold mb-2 text-slate-900">How to Clean a Food Warming Mat →</h3>
             <p class="text-slate-700">Learn how to clean your silicone warming mat to keep it looking new.</p>
           </a>
-          <a href="/troubleshooting/" class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-purple-200 group">
-            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          <a href="/troubleshooting/"
+            class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-purple-200 group">
+            <div
+              class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                </path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
             </div>
             <h3 class="text-xl font-bold mb-2 text-slate-900">Troubleshooting Your Food Warming Mat →</h3>
             <p class="text-slate-700">Find solutions to common problems with your graphene warming mat.</p>
           </a>
         </div>
         <div class="mt-8 text-center">
-          <a href="/assets/guide.pdf" class="inline-flex items-center gap-2 px-6 py-3 bg-amber-400 text-slate-900 font-semibold rounded-full hover:bg-amber-300 shadow-lg" download>
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          <a href="/assets/guide.pdf"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-amber-400 text-slate-900 font-semibold rounded-full hover:bg-amber-300 shadow-lg"
+            download>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+              </path>
+            </svg>
             Download Complete PDF User Manual
           </a>
         </div>
@@ -392,52 +680,80 @@
     </section>
 
     <section id="faq" class="bg-slate-50">
-      <div class="max-w-4xl mx-auto px-6 py-16">
+      <div class="max-w-4xl mx-auto px-6 py-24 md:py-32">
         <h2 class="text-3xl font-bold text-slate-900 mb-6">Frequently Asked Questions About Food Warming Mats</h2>
         <div class="space-y-4 text-slate-700">
           <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6">
             <summary class="text-lg font-semibold cursor-pointer">How does an electric food warming mat work?</summary>
-            <p class="mt-3 leading-relaxed">An electric food warming mat uses a heating element to generate gentle, even heat. This heat is transferred to the surface of the mat, which in turn warms the food. The best food warming mats have adjustable temperature settings, so you can customize the heat level for different dishes. For more information, see our section on <a href="#features" class="text-amber-600 font-semibold hover:text-amber-500">key features</a>.</p>
+            <p class="mt-3 leading-relaxed">An electric food warming mat uses a heating element to generate gentle, even
+              heat. This heat is transferred to the surface of the mat, which in turn warms the food. The best food
+              warming mats have adjustable temperature settings, so you can customize the heat level for different
+              dishes. For more information, see our section on <a href="#features"
+                class="text-amber-600 font-semibold hover:text-amber-500">key features</a>.</p>
           </details>
           <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6">
             <summary class="text-lg font-semibold cursor-pointer">What is a graphene warming mat?</summary>
-            <p class="mt-3 leading-relaxed">A graphene warming mat is a type of food warming mat that uses graphene as a heating element. Graphene is a revolutionary material that is incredibly thin, strong, and conductive. This allows for a warming mat that is ultra-thin, lightweight, and energy-efficient. To learn more, check out our section on the <a href="#advantages" class="text-amber-600 font-semibold hover:text-amber-500">advantages of graphene warming mats</a>.</p>
+            <p class="mt-3 leading-relaxed">A graphene warming mat is a type of food warming mat that uses graphene as a
+              heating element. Graphene is a revolutionary material that is incredibly thin, strong, and conductive.
+              This allows for a warming mat that is ultra-thin, lightweight, and energy-efficient. To learn more, check
+              out our section on the <a href="#advantages"
+                class="text-amber-600 font-semibold hover:text-amber-500">advantages of graphene warming mats</a>.</p>
           </details>
           <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6">
-            <summary class="text-lg font-semibold cursor-pointer">What are the benefits of using a portable food warming mat?</summary>
-            <p class="mt-3 leading-relaxed">A portable food warming mat is a great option for potlucks, picnics, and other events. It's also a great way to keep food warm at your desk or in your car. A rollable or foldable warming mat is especially convenient for travel and storage.</p>
+            <summary class="text-lg font-semibold cursor-pointer">What are the benefits of using a portable food warming
+              mat?</summary>
+            <p class="mt-3 leading-relaxed">A portable food warming mat is a great option for potlucks, picnics, and
+              other events. It's also a great way to keep food warm at your desk or in your car. A rollable or foldable
+              warming mat is especially convenient for travel and storage.</p>
           </details>
           <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6">
             <summary class="text-lg font-semibold cursor-pointer">How do I clean a silicone warming mat?</summary>
-            <p class="mt-3 leading-relaxed">A silicone warming mat is very easy to clean. Simply wipe it down with a damp cloth or place it in the dishwasher. For more information, see our <a href="/cleaning-maintenance/" class="text-amber-600 font-semibold hover:text-amber-500">cleaning and maintenance guide</a>.</p>
+            <p class="mt-3 leading-relaxed">A silicone warming mat is very easy to clean. Simply wipe it down with a
+              damp cloth or place it in the dishwasher. For more information, see our <a href="/cleaning-maintenance/"
+                class="text-amber-600 font-semibold hover:text-amber-500">cleaning and maintenance guide</a>.</p>
           </details>
           <details class="bg-white rounded-lg shadow-sm border border-slate-200 p-6">
-            <summary class="text-lg font-semibold cursor-pointer">What are some important safety features to look for in a food warming mat?</summary>
-            <p class="mt-3 leading-relaxed">When choosing a food warming mat, it's important to look for safety features like an auto shut-off, a child lock, and cool-touch edges. For a complete list of safety tips, see our <a href="/safety-tips/" class="text-amber-600 font-semibold hover:text-amber-500">food warming mat safety guide</a>.</p>
+            <summary class="text-lg font-semibold cursor-pointer">What are some important safety features to look for in
+              a food warming mat?</summary>
+            <p class="mt-3 leading-relaxed">When choosing a food warming mat, it's important to look for safety features
+              like an auto shut-off, a child lock, and cool-touch edges. For a complete list of safety tips, see our <a
+                href="/safety-tips/" class="text-amber-600 font-semibold hover:text-amber-500">food warming mat safety
+                guide</a>.</p>
           </details>
         </div>
       </div>
     </section>
   </main>
 
-  <div id="coming-soon-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/80 backdrop-blur-sm px-6" role="dialog" aria-modal="true" aria-labelledby="coming-soon-title" aria-hidden="true">
+  <div id="coming-soon-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/80 backdrop-blur-sm px-6" role="dialog"
+    aria-modal="true" aria-labelledby="coming-soon-title" aria-hidden="true">
     <div class="relative w-full max-w-md rounded-3xl bg-white p-8 text-slate-800 shadow-2xl">
-      <button id="coming-soon-close" type="button" class="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-400" aria-label="Close coming soon message">
+      <button id="coming-soon-close" type="button"
+        class="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-400"
+        aria-label="Close coming soon message">
         <span aria-hidden="true">&times;</span>
       </button>
       <h3 id="coming-soon-title" class="text-2xl font-bold text-slate-900">Coming Soon</h3>
-      <p class="mt-3 text-slate-600">Our curated warming mat picks are almost ready. Check back shortly to shop the full collection or continue exploring the guide to discover how graphene heating transforms every meal.</p>
+      <p class="mt-3 text-slate-600">Our curated warming mat picks are almost ready. Check back shortly to shop the full
+        collection or continue exploring the guide to discover how graphene heating transforms every meal.</p>
       <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <button id="coming-soon-ok" type="button" class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300">Got it</button>
-        <a href="#advantages" class="inline-flex w-full items-center justify-center rounded-full border border-slate-200 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-200">See Warming Mat Advantages</a>
+        <button id="coming-soon-ok" type="button"
+          class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300">Got
+          it</button>
+        <a href="#advantages"
+          class="inline-flex w-full items-center justify-center rounded-full border border-slate-200 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-200">See
+          Warming Mat Advantages</a>
       </div>
     </div>
   </div>
 
   <footer class="bg-slate-900 text-slate-300">
-    <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+    <div
+      class="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
       <p>&copy; <span id="year">2025</span> Warming Mat Hub. All rights reserved.</p>
-      <p class="text-sm">Curated warming mat research with direct links to the brand&apos;s official Amazon profile for easy shopping.</p>
+      <p class="text-sm">Curated warming mat research with direct links to the brand&apos;s official Amazon profile for
+        easy shopping.</p>
       <a href="#home" class="text-sm text-amber-400 hover:text-amber-300">Back to top</a>
     </div>
   </footer>
@@ -525,4 +841,5 @@
 
   </script>
 </body>
+
 </html>

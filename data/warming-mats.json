@@ -7,6 +7,7 @@
     "heroDescription": "Host brunches, potlucks, and catered dinners with a graphene-powered warming mat that keeps every serving platter perfectly warm without hotspots.",
     "primaryKeyword": "graphene buffet warming mat",
     "secondaryKeywords": [
+      "food warming mat",
       "graphene heating mat for food",
       "buffet warming mat",
       "smart warming mat"
@@ -22,10 +23,22 @@
       "Premium odor-free materials stay compatible with stainless, ceramic, and bamboo servingware."
     ],
     "specs": [
-      { "label": "Mat Length", "value": "48 inches" },
-      { "label": "Surface", "value": "Graphene-infused silicone" },
-      { "label": "Heat Range", "value": "95°F – 203°F" },
-      { "label": "Auto Shut-Off", "value": "6 hours" }
+      {
+        "label": "Mat Length",
+        "value": "48 inches"
+      },
+      {
+        "label": "Surface",
+        "value": "Graphene-infused silicone"
+      },
+      {
+        "label": "Heat Range",
+        "value": "95°F – 203°F"
+      },
+      {
+        "label": "Auto Shut-Off",
+        "value": "6 hours"
+      }
     ],
     "faqs": [
       {
@@ -38,7 +51,7 @@
       },
       {
         "question": "Does the mat produce any odor while heating?",
-        "answer": "No. The odor-free, food-safe materials are designed to heat cleanly so your menu aromas remain the focus." 
+        "answer": "No. The odor-free, food-safe materials are designed to heat cleanly so your menu aromas remain the focus."
       }
     ],
     "ctaLink": "#coming-soon",

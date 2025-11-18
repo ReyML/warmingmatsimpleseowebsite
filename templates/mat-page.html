@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,17 +9,18 @@
   <link rel="canonical" href="https://www.warmingmat.shop/{{urlPath}}/" />
   <meta name="robots" content="index, follow" />
   <meta name="keywords" content="{{primaryKeyword}}, {{secondaryKeywordsList}}" />
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.5/dist/tailwind.min.css" />
- <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico/favicon-32x32.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.5/dist/tailwind.min.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico/favicon-32x32.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
- <style>
+  <style>
     body {
       font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
       background: #0f172a;
       color: #0f172a;
     }
+
     .glass-card {
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid rgba(255, 255, 255, 0.16);
@@ -26,6 +28,7 @@
     }
   </style>
 </head>
+
 <body class="bg-slate-950 text-slate-100">
   <header class="max-w-6xl mx-auto flex flex-col gap-6 px-6 py-12">
     <nav class="flex items-center justify-between">
@@ -38,12 +41,17 @@
         <h1 class="text-4xl md:text-5xl font-extrabold text-white">{{heroHeading}}</h1>
         <p class="text-lg text-slate-300">{{heroDescription}}</p>
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="{{ctaLink}}" class="coming-soon-trigger inline-flex items-center justify-center px-6 py-3 rounded-full bg-amber-400 text-slate-900 font-semibold shadow hover:bg-amber-300" role="button">{{ctaLabel}}</a>
-          <a href="/#guide" class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/40 text-white hover:bg-white/10">Read Warming Guide</a>
+          <a href="{{ctaLink}}"
+            class="coming-soon-trigger inline-flex items-center justify-center px-6 py-3 rounded-full bg-amber-400 text-slate-900 font-semibold shadow hover:bg-amber-300"
+            role="button">{{ctaLabel}}</a>
+          <a href="/#guide"
+            class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/40 text-white hover:bg-white/10">Read
+            Warming Guide</a>
         </div>
       </div>
       <figure class="rounded-3xl overflow-hidden shadow-2xl">
-        <img src="{{heroImage}}" alt="{{title}} hero image" class="w-full h-full object-cover" loading="lazy" />
+        <img src="{{heroImage}}" alt="{{title}} hero image" class="w-full h-full object-cover" loading="lazy"
+          width="800" height="600" />
       </figure>
     </div>
   </header>
@@ -72,27 +80,36 @@
 
     <section class="space-y-6">
       <h2 class="text-3xl font-bold text-white">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          {{#faqs}}
+      <div class="space-y-4">
+        {{#faqs}}
         <details class="glass-card rounded-2xl p-4">
           <summary class="text-lg font-semibold cursor-pointer text-white">{{question}}</summary>
           <p class="mt-3 text-slate-200">{{answer}}</p>
         </details>
-          {{/faqs}}
+        {{/faqs}}
       </div>
     </section>
   </main>
 
-  <div id="coming-soon-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/80 backdrop-blur-sm px-6" role="dialog" aria-modal="true" aria-labelledby="coming-soon-title" aria-hidden="true">
+  <div id="coming-soon-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/80 backdrop-blur-sm px-6" role="dialog"
+    aria-modal="true" aria-labelledby="coming-soon-title" aria-hidden="true">
     <div class="relative w-full max-w-md rounded-3xl bg-white p-8 text-slate-800 shadow-2xl">
-      <button id="coming-soon-close" type="button" class="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-400" aria-label="Close coming soon message">
+      <button id="coming-soon-close" type="button"
+        class="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-400"
+        aria-label="Close coming soon message">
         <span aria-hidden="true">&times;</span>
       </button>
       <h3 id="coming-soon-title" class="text-2xl font-bold text-slate-900">Coming Soon</h3>
-      <p class="mt-3 text-slate-600">Our curated graphene warming mat picks will be live shortly. Stay tuned or explore the guides to learn how to choose the best model for {{useCase}}.</p>
+      <p class="mt-3 text-slate-600">Our curated graphene warming mat picks will be live shortly. Stay tuned or explore
+        the guides to learn how to choose the best model for {{useCase}}.</p>
       <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <button id="coming-soon-ok" type="button" class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300">Got it</button>
-        <a href="/" class="inline-flex w-full items-center justify-center rounded-full border border-slate-200 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-200">Visit Home</a>
+        <button id="coming-soon-ok" type="button"
+          class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300">Got
+          it</button>
+        <a href="/"
+          class="inline-flex w-full items-center justify-center rounded-full border border-slate-200 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-200">Visit
+          Home</a>
       </div>
     </div>
   </div>
@@ -184,4 +201,5 @@
   }
   </script>
 </body>
+
 </html>
