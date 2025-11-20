@@ -271,9 +271,9 @@
             class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">Features</a>
           <a href="#guide" class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">Guide</a>
           <a href="#faq" class="text-sm font-semibold text-slate-100 hover:text-amber-300 transition-colors">FAQ</a>
-          <a href="#coming-soon"
-            class="coming-soon-trigger inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-bold text-slate-900 shadow-lg hover:bg-slate-100 transition-all hover:scale-105"
-            role="button">Shop Now</a>
+          <a href="https://www.amazon.com/s?k=TTAPIR&rh=p_6%3AA2A32RFH1QVV8E&dc&ds=v1%3ADRfEIAPySaW2YnpJ8BuxKMbaQzLw5U2bzu4o%2Fb%2FddSM&qid=1763611492&rnid=331544011&ref=sr_nr_p_6_1"
+            class="inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-bold text-slate-900 shadow-lg hover:bg-slate-100 transition-all hover:scale-105"
+            target="_blank" rel="noopener noreferrer">Shop on Amazon</a>
         </nav>
         <button id="mobile-menu-button"
           class="md:hidden ml-auto inline-flex items-center justify-center rounded-full bg-slate-900/90 px-3 py-2 text-white shadow ring-1 ring-white/20 transition"
@@ -297,9 +297,9 @@
           <a href="#faq"
             class="text-base font-semibold text-slate-100 hover:text-amber-300 transition-colors mb-2">FAQ</a>
         </div>
-        <a href="#coming-soon"
-          class="coming-soon-trigger inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 transition-colors"
-          role="button">Shop the Food Warming Mat</a>
+        <a href="https://www.amazon.com/s?k=TTAPIR&rh=p_6%3AA2A32RFH1QVV8E&dc&ds=v1%3ADRfEIAPySaW2YnpJ8BuxKMbaQzLw5U2bzu4o%2Fb%2FddSM&qid=1763611492&rnid=331544011&ref=sr_nr_p_6_1"
+          class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 transition-colors"
+          target="_blank" rel="noopener noreferrer">Shop on Amazon</a>
       </div>
     </div>
   </header>
@@ -323,10 +323,10 @@
           </div>
 
           <div class="flex flex-col sm:flex-row sm:items-center justify-center gap-5 pt-6">
-            <a href="#coming-soon"
-              class="coming-soon-trigger inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-slate-900 transition-all duration-200 bg-white rounded-full hover:bg-slate-100 hover:scale-105 shadow-xl"
-              role="button">
-              Shop Now
+            <a href="https://www.amazon.com/s?k=TTAPIR&rh=p_6%3AA2A32RFH1QVV8E&dc&ds=v1%3ADRfEIAPySaW2YnpJ8BuxKMbaQzLw5U2bzu4o%2Fb%2FddSM&qid=1763611492&rnid=331544011&ref=sr_nr_p_6_1"
+              class="inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-slate-900 transition-all duration-200 bg-white rounded-full hover:bg-slate-100 hover:scale-105 shadow-xl"
+              target="_blank" rel="noopener noreferrer">
+              Shop on Amazon
             </a>
             <a href="#guide"
               class="inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white transition-all duration-200 border-2 border-white rounded-full hover:bg-white/10 hover:scale-105 backdrop-blur-sm">
@@ -726,28 +726,7 @@
     </section>
   </main>
 
-  <div id="coming-soon-modal"
-    class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/80 backdrop-blur-sm px-6" role="dialog"
-    aria-modal="true" aria-labelledby="coming-soon-title" aria-hidden="true">
-    <div class="relative w-full max-w-md rounded-3xl bg-white p-8 text-slate-800 shadow-2xl">
-      <button id="coming-soon-close" type="button"
-        class="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-400"
-        aria-label="Close coming soon message">
-        <span aria-hidden="true">&times;</span>
-      </button>
-      <h3 id="coming-soon-title" class="text-2xl font-bold text-slate-900">Coming Soon</h3>
-      <p class="mt-3 text-slate-600">Our curated warming mat picks are almost ready. Check back shortly to shop the full
-        collection or continue exploring the guide to discover how graphene heating transforms every meal.</p>
-      <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <button id="coming-soon-ok" type="button"
-          class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-base font-semibold text-slate-900 shadow-inner hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300">Got
-          it</button>
-        <a href="#advantages"
-          class="inline-flex w-full items-center justify-center rounded-full border border-slate-200 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-200">See
-          Warming Mat Advantages</a>
-      </div>
-    </div>
-  </div>
+
 
   <footer class="bg-slate-900 text-slate-300">
     <div
@@ -823,47 +802,14 @@
 
 
 
-    const comingSoonModal = document.getElementById('coming-soon-modal');
-    const comingSoonClose = document.getElementById('coming-soon-close');
-    const comingSoonOk = document.getElementById('coming-soon-ok');
-    const comingSoonTriggers = document.querySelectorAll('.coming-soon-trigger');
-
-    const openComingSoon = (event) => {
-      if (event) event.preventDefault();
-      if (!comingSoonModal) return;
-      comingSoonModal.classList.remove('hidden');
-      comingSoonModal.classList.add('flex');
-      comingSoonModal.setAttribute('aria-hidden', 'false');
-      document.body.classList.add('overflow-hidden');
-      if (comingSoonOk) comingSoonOk.focus();
-    };
-
-    const closeComingSoon = () => {
-      if (!comingSoonModal) return;
-      comingSoonModal.classList.add('hidden');
-      comingSoonModal.classList.remove('flex');
-      comingSoonModal.setAttribute('aria-hidden', 'true');
-      document.body.classList.remove('overflow-hidden');
-    };
-
-    comingSoonTriggers.forEach((trigger) => {
-      trigger.addEventListener('click', openComingSoon);
-    });
-
-    if (comingSoonClose) comingSoonClose.addEventListener('click', closeComingSoon);
-    if (comingSoonOk) comingSoonOk.addEventListener('click', closeComingSoon);
-
-    if (comingSoonModal) {
-      comingSoonModal.addEventListener('click', (event) => {
-        if (event.target === comingSoonModal) {
-          closeComingSoon();
-        }
-      });
-    }
-
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') {
-        closeComingSoon();
+        // Optional: Close mobile menu if open
+        if (!menu.classList.contains('hidden')) {
+          menu.classList.add('hidden');
+          menu.classList.remove('flex');
+          btn.setAttribute('aria-expanded', 'false');
+        }
       }
     });
 
