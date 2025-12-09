@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.warmingmat.shop/</loc>
-    <lastmod>2025-11-20</lastmod>
+    <lastmod>2025-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.warmingmat.shop/how-to-use/</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.warmingmat.shop/safety-tips/</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.warmingmat.shop/cleaning-maintenance/</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.warmingmat.shop/troubleshooting/</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.warmingmat.shop/programmatic/graphene-buffet-warming-mat/</loc>
-    <lastmod>2025-11-20</lastmod>
+    <lastmod>2025-12-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -1,0 +1,13 @@
+# Add these rules to your Nginx server block (usually in /etc/nginx/sites-available/your-site)
+
+# 1. Redirect index.html to root /
+location = /index.html {
+    return 301 $scheme://$host/;
+}
+
+# 2. Redirect non-www to www (if not already handled)
+# This usually goes in a separate server block listening on port 80/443 for the non-www domain
+# server {
+#     server_name warmingmat.shop;
+#     return 301 $scheme://www.warmingmat.shop$request_uri;
+# }
