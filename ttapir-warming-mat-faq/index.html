@@ -28,6 +28,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NXJMMWG0X9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-NXJMMWG0X9');
+  </script>
   <style>
     body {
       font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
@@ -55,7 +62,7 @@
           <h1 class="text-4xl md:text-5xl font-extrabold mt-4">TTAPIR Warming Mat FAQ</h1>
           <p class="text-xl text-slate-200 mt-4">Quick answers to the most common setup, usage, and care questions.</p>
           <div class="mt-6 flex flex-col sm:flex-row gap-4">
-            <a href="https://www.amazon.com/dp/B0FPKQ4WWT"
+            <a href="https://www.amazon.com/dp/B0FPKQ4WWT" data-cta="hero"
               class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-amber-400 text-slate-900 font-semibold shadow hover:bg-amber-300"
               target="_blank" rel="sponsored noopener noreferrer">Shop on Amazon</a>
             <a href="/assets/guide.pdf"
@@ -137,6 +144,23 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.addEventListener('click', (event) => {
+      const link = event.target.closest('a');
+      if (!link) return;
+      const href = link.getAttribute('href') || '';
+      if (!href.includes('amazon.com')) return;
+      if (typeof gtag !== 'function') return;
+      const linkText = (link.textContent || '').trim().slice(0, 120);
+      const ctaLocation = link.dataset.cta || link.closest('section')?.id || 'unknown';
+      gtag('event', 'amazon_click', {
+        link_url: link.href,
+        link_text: linkText,
+        cta_location: ctaLocation,
+        page_path: window.location.pathname,
+        transport_type: 'beacon'
+      });
+    }, true);
   </script>
 </body>
 
