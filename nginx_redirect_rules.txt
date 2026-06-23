@@ -12,7 +12,12 @@ location = /index.html {
 #     return 301 $scheme://www.warmingmat.shop$request_uri;
 # }
 
-# 3. Preserve trailing slashes on directory URLs.
+# 3. Canonicalize directory URLs with a trailing slash.
+# Place this inside `location /` before `try_files`. It only redirects an existing
+# directory requested without its trailing slash; files and the site root are untouched.
+if (-d $request_filename) {
+    rewrite ^(.+[^/])$ https://www.warmingmat.shop$1/ permanent;
+}
+
 # Canonical tags, sitemap URLs, and internal links use directory URLs ending in /.
-# Do not add a rule that strips those slashes. With try_files $uri $uri/index.html,
-# Nginx will redirect /guide to /guide/ before serving guide/index.html.
+# Do not add a rule that strips those slashes.
