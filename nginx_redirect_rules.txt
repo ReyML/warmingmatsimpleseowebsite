@@ -11,3 +11,8 @@ location = /index.html {
 #     server_name warmingmat.shop;
 #     return 301 $scheme://www.warmingmat.shop$request_uri;
 # }
+
+# 3. Preserve trailing slashes on directory URLs.
+# Canonical tags, sitemap URLs, and internal links use directory URLs ending in /.
+# Do not add a rule that strips those slashes. With try_files $uri $uri/index.html,
+# Nginx will redirect /guide to /guide/ before serving guide/index.html.
